@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const Farm = () => {
-  return (
-    <div>
-      Hello from Farm
-    </div>
-  )
-}
+const Farm = () => (
+  <div>
+    Hello from Farm
+  </div>
+);
 
-export default Farm
+export default Farm;
