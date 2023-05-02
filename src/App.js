@@ -21,7 +21,7 @@ function App() {
       <h1>Budget Calculator</h1>
       <main className='App'>
         <Form />
-        <List expenses={expenses}/>
+        <List list={expenses}/>
       </main>
       <h1>Total Spendings<span className='total'>
         {' '}PKR: {expenses.reduce((acc, cur)=>{return acc+=cur.amount},0)}
