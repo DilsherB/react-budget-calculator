@@ -6,9 +6,7 @@ import {v4} from 'uuid'
 import { useState } from 'react';
 
 const expenseList = [
-  { id: v4(), name: 'Item 1', amount: 500 },
-  { id: v4(), name: 'Item 2', amount: 1000 },
-  { id: v4(), name: 'Item 3', amount: 1500 },
+  
 ]
 
 function App() {

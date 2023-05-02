@@ -1,10 +1,15 @@
 import React from 'react'
+import {MdEdit, MdDelete} from 'react-icons/md'
 
 const Item = ({item}) => {
+    const {id, name, amount} = item
   return (
-    <>
-      <tr>Hello from item</tr>
-    </>
+        <tr>
+            <td>{name}</td>
+            <td>{amount}</td>
+            <td><MdEdit  className='text-success'/></td>
+            <td><MdDelete  className='text-danger'/></td>
+        </tr>
   )
 }
 
