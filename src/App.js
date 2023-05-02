@@ -1,31 +1,36 @@
 import './App.css';
+import { v4 } from 'uuid';
+import { useState } from 'react';
 import Form from './components/Form';
 import Alert from './components/Alert';
 import List from './components/List';
-import {v4} from 'uuid'
-import { useState } from 'react';
 
 const expenseList = [
   { id: v4(), name: 'Rento of the home', amount: 500 },
   { id: v4(), name: 'Installment of car', amount: 1000 },
   { id: v4(), name: 'Electricity bill for the month', amount: 1500 },
-]
+];
 
 function App() {
-  const [expenses, setExpenses] = useState(expenseList)
-
+  const [expenses, setExpenses] = useState(expenseList);
+  
   return (
     <>
       <h1>React App</h1>
       <Alert />
       <h1>Budget Calculator</h1>
-      <main className='App'>
+      <main className="App">
         <Form />
-        <List list={expenses}/>
+        <List list={expenses} />
       </main>
-      <h1>Total Spendings<span className='total'>
-        {' '}PKR: {expenses.reduce((acc, cur)=>{return acc+=cur.amount},0)}
-      </span></h1>
+      <h1>
+        Total Spendings
+        <span className="total">
+          {' '}
+          PKR:
+          {expenses.reduce((acc, cur) => acc += cur.amount, 0)}
+        </span>
+      </h1>
     </>
   );
 }
