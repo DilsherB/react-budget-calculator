@@ -13,7 +13,6 @@ const expenseList = [
 
 function App() {
   const [expenses, setExpenses] = useState(expenseList);
-  
   return (
     <>
       <h1>React App</h1>
@@ -26,9 +25,8 @@ function App() {
       <h1>
         Total Spendings
         <span className="total">
-          {' '}
-          PKR:
-          {expenses.reduce((acc, cur) => acc += cur.amount, 0)}
+          {' '}PKR:{' '}
+          {expenses.reduce((acc, cur) => { return acc += cur.amount}, 0)}
         </span>
       </h1>
     </>
