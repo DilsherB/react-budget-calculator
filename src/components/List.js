@@ -30,7 +30,7 @@ const list = ({ list }) => (
               {list.map((item) => <Item key={item.id} item={item} />)}
             </tbody>
           </table>
-          <button type='button' className="btn btn-danger">
+          <button type="button" className="btn btn-danger">
             Clear All
             <MdDelete className="btn-icon" />
           </button>
