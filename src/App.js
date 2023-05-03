@@ -25,8 +25,12 @@ function App() {
       <h1>
         Total Spendings
         <span className="total">
-          {' '}PKR:{' '}
-          {expenses.reduce((acc, cur) => { return acc += cur.amount}, 0)}
+          {' '}
+          PKR:
+          {' '}
+          {expenses.reduce((acc, cur) => { 
+            return acc += cur.amount}, 0)
+          }
         </span>
       </h1>
     </>
