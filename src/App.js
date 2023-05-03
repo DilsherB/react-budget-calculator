@@ -23,29 +23,32 @@ function App() {
   const handleAmount = (e) => {
     setAmount(e.target.value);
   };
-  const handleAlert =({type, text}) => {
-    setAlert({show: true, type, text})
+  const handleAlert = ({ type, text }) => {
+    setAlert({ show: true, type, text });
     setTimeout(() => {
-      setAlert({show: false})
-    }, 3000)
-  }
+      setAlert({ show: false });
+    }, 5000);
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     if (expense !== "" && amount > 0) {
       const newExpense = { id: v4(), name: expense, amount: parseInt(amount, 10) };
       setExpenses([...expenses, newExpense]);
+      handleAlert({ type: 'success', text: 'Item successfully added' });
       setExpense("");
       setAmount("");
     } else {
-      alert("Invalid expense or amount");
+      handleAlert({ type: 'danger', text: 'Please enter description and amount' });
     }
   };
   const currency = "PKR";
   return (
     <>
       <h1>React App</h1>
-      {alert.show && <Alert type={alert.type} text={alert.text} />}
       <h1>Budget Calculator</h1>
+      <div className="container">
+        {alert.show && <Alert type={alert.type} text={alert.text} />}
+      </div>
       <main className="App">
         <Form
           expense={expense}
