@@ -7,8 +7,8 @@ const Item = ({ item }) => {
     <tr>
       <td>{name}</td>
       <td>{amount}</td>
-      <td><MdEdit className="text-success" /></td>
-      <td><MdDelete className="text-danger" /></td>
+      <td><MdEdit className="text-success" id={id} /></td>
+      <td><MdDelete className="text-danger" id={id} /></td>
     </tr>
   );
 };

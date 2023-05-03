@@ -8,11 +8,12 @@ import List from './components/List';
 const expenseList = [
   { id: v4(), name: 'Rento of the home', amount: 500 },
   { id: v4(), name: 'Installment of car', amount: 1000 },
-  { id: v4(), name: 'Electricity bill for the month. Electricity bill for the month. Electricity bill for the month.Electricity bill for the month. Electricity bill for the month. Electricity bill for the month', amount: 1500 },
+  { id: v4(), name: 'Electricity bill for the month', amount: 1500 },
 ];
 
 function App() {
   const [expenses, setExpenses] = useState(expenseList);
+  const currency = "PKR";
   return (
     <>
       <h1>React App</h1>
@@ -20,13 +21,13 @@ function App() {
       <h1>Budget Calculator</h1>
       <main className="App">
         <Form />
-        <List list={expenses} />
+        <List list={expenses} currency={currency} />
       </main>
       <h1>
         Total Spendings
         <span className="total">
           {' '}
-          PKR:
+          {currency}:
           {' '}
           { expenses.reduce((acc, cur) => {
             let ret = acc;

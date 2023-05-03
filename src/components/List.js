@@ -2,7 +2,7 @@ import React from 'react';
 import { MdDelete } from 'react-icons/md';
 import Item from './Item';
 
-const list = ({ list }) => (
+const list = ({ list, currency }) => (
   <>
     {list.length > 0
       ? (
@@ -21,7 +21,7 @@ const list = ({ list }) => (
             <thead>
               <tr className="table-primary text-success">
                 <th>Expense</th>
-                <th>Amount (PKR)</th>
+                <th>Amount ({currency})</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
