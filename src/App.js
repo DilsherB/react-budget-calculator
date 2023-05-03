@@ -45,7 +45,7 @@ function App() {
   };
   const handleClearAll = () => {
     setExpenses([]);
-    handleAlert({ type: 'danger', text: 'All items deleted' });
+    handleAlert({ type: 'danger', text: 'All items successfully deleted' });
   };
   const handleEdit = (id) => {
     const itemToUpdate = expenses.find((item) => item.id === id);
