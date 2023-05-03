@@ -27,7 +27,7 @@ function App() {
     setAlert({ show: true, type, text });
     setTimeout(() => {
       setAlert({ show: false });
-    }, 5000);
+    }, 4000);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,9 +44,8 @@ function App() {
   const currency = "PKR";
   return (
     <>
-      <h1>React App</h1>
-      <h1>Budget Calculator</h1>
-      <div className="container">
+      <h1 className="text-center">React Budget Calculator</h1>
+      <div className="d-flex justify-content-center text-center">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
       </div>
       <main className="App">
@@ -59,7 +58,7 @@ function App() {
         />
         <List list={expenses} currency={currency} />
       </main>
-      <h1>
+      <h1 className="text-center">
         Total Spendings
         <span className="total">
           {' '}
