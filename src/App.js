@@ -28,9 +28,11 @@ function App() {
           {' '}
           PKR:
           {' '}
-          {expenses.reduce((acc, cur) => { 
-            return acc += cur.amount}, 0)
-          }
+          { expenses.reduce((acc, cur) => {
+            let ret = acc;
+            ret += cur.amount;
+            return ret;
+          }, 0)}
         </span>
       </h1>
     </>
