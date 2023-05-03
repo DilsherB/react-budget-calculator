@@ -7,3 +7,6 @@ th:first-child {
   text-align: left;
 }
 
+.form > * {
+  margin: 20px;
+}
