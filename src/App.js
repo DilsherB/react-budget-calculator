@@ -16,6 +16,8 @@ function App() {
   const [expense, setExpense] = useState("");
   const [amount, setAmount] = useState("");
   const [alert, setAlert] = useState({ show: false });
+  const [edit, setEdit] = useState(false);
+  const [id, setId] = useState(0);
 
   const handleExpense = (e) => {
     setExpense(e.target.value);
@@ -41,6 +43,19 @@ function App() {
       handleAlert({ type: 'danger', text: 'Please enter description and amount' });
     }
   };
+  const handleClearAll = () => {
+    setExpenses([]);
+    handleAlert({ type: 'danger', text: 'All items deleted' });
+  };
+  const handleEdit = (id) => {
+    const itemToUpdate = expenses.find((item) => item.id === id);
+    console.log(itemToUpdate);
+  };
+  const handleDelete = (id) => {
+    const filteredExpenses = expenses.filter((item) => item.id !== id);
+    setExpenses(filteredExpenses);
+    handleAlert({ type: 'danger', text: 'Item successfully deleted' });
+  };
   const currency = "PKR";
   return (
     <>
@@ -55,8 +70,15 @@ function App() {
           handleExpense={handleExpense}
           handleAmount={handleAmount}
           handleSubmit={handleSubmit}
+          edit={edit}
         />
-        <List list={expenses} currency={currency} />
+        <List
+          list={expenses}
+          currency={currency}
+          clearAll={handleClearAll}
+          handleEdit={handleEdit}
+          handleDelete={handleDelete}
+        />
       </main>
       <h1 className="text-center">
         Total Spendings

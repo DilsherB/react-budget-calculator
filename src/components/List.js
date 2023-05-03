@@ -2,7 +2,9 @@ import React from 'react';
 import { MdDelete } from 'react-icons/md';
 import Item from './Item';
 
-const list = ({ list, currency }) => (
+const list = ({
+  list, currency, handleEdit, handleDelete, clearAll
+}) => (
   <>
     {list.length > 0
       ? (
@@ -27,10 +29,17 @@ const list = ({ list, currency }) => (
               </tr>
             </thead>
             <tbody>
-              {list.map((item) => <Item key={item.id} item={item} />)}
+              {list.map((item) => (
+                <Item
+                  key={item.id}
+                  item={item}
+                  handleDelete={handleDelete}
+                  handleEdit={handleEdit}
+                />
+              ))}
             </tbody>
           </table>
-          <button type="button" className="btn btn-danger">
+          <button type="button" className="btn btn-danger" onClick={clearAll}>
             Clear All
             <MdDelete className="btn-icon" />
           </button>
