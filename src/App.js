@@ -8,7 +8,7 @@ import List from './components/List';
 const expenseList = [
   { id: v4(), name: 'Rento of the home', amount: 500 },
   { id: v4(), name: 'Installment of car', amount: 1000 },
-  { id: v4(), name: 'Electricity bill for the month', amount: 1500 },
+  { id: v4(), name: 'Electricity bill for the month. Electricity bill for the month. Electricity bill for the month.Electricity bill for the month. Electricity bill for the month. Electricity bill for the month', amount: 1500 },
 ];
 
 function App() {
