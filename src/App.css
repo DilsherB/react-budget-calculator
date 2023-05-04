@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+td:first-child,
+th:first-child {
+  text-align: left;
+}
+
+.form > * {
+  margin: 20px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
