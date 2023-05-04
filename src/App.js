@@ -34,9 +34,18 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (expense !== "" && amount > 0) {
-      const newExpense = { id: v4(), name: expense, amount: parseInt(amount, 10) };
-      setExpenses([...expenses, newExpense]);
-      handleAlert({ type: 'success', text: 'Item successfully added' });
+      if (edit) {
+        const tempItem = expenses.map((item) => {
+          return item.id === id ? { ...item, name: expense, amount: parseInt(amount, 10) } : item;
+        });
+        setExpenses(tempItem);
+        setEdit(false);
+        handleAlert({ type: 'success', text: 'Item successfully updated' });
+      } else {
+        const newExpense = { id: v4(), name: expense, amount: parseInt(amount, 10) };
+        setExpenses([...expenses, newExpense]);
+        handleAlert({ type: 'success', text: 'Item successfully added' });
+      }
       setExpense("");
       setAmount("");
     } else {
@@ -49,7 +58,11 @@ function App() {
   };
   const handleEdit = (id) => {
     const itemToUpdate = expenses.find((item) => item.id === id);
-    console.log(itemToUpdate);
+    const { name, amount } = itemToUpdate;
+    setExpense(name);
+    setAmount(amount);
+    setEdit(true);
+    setId(id);
   };
   const handleDelete = (id) => {
     const filteredExpenses = expenses.filter((item) => item.id !== id);
