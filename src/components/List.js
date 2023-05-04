@@ -41,7 +41,7 @@ const list = ({
           </table>
           <button type="button" className="btn btn-danger" onClick={clearAll}>
             Clear All
-            <MdDelete className="btn-icon" />
+            <MdDelete className="fs-4 ms-2 pb-1" />
           </button>
         </div>
       )

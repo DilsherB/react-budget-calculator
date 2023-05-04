@@ -36,7 +36,7 @@ const Form = (props) => {
           </label>
         </div>
         <button type="submit" className="btn btn-success formElement">
-          {edit ? "Update" : "Submit"} <MdSend />
+          {edit ? "Update" : "Submit"} <MdSend className="fs-4 ms-2 pb-1" />
         </button>
       </div>
     </form>
