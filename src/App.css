@@ -16,5 +16,5 @@ th:first-child {
 }
 
 input[type=number] {
-  appearance: textfield
+  appearance: textfield;
 }
