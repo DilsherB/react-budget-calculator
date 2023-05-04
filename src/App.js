@@ -1,15 +1,16 @@
 import './App.css';
 import { v4 } from 'uuid';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Form from './components/Form';
 import Alert from './components/Alert';
 import List from './components/List';
 
-const expenseList = [
-  { id: v4(), name: 'Rento of the home', amount: 500 },
-  { id: v4(), name: 'Installment of car', amount: 1000 },
-  { id: v4(), name: 'Electricity bill for the month', amount: 1500 },
-];
+// const expenseList = [
+//   { id: v4(), name: 'Rento of the home', amount: 500 },
+//   { id: v4(), name: 'Installment of car', amount: 1000 },
+//   { id: v4(), name: 'Electricity bill for the month', amount: 1500 },
+// ];
+const expenseList = JSON.parse(localStorage.getItem("budgetItems")) || [];
 
 function App() {
   const [expenses, setExpenses] = useState(expenseList);
@@ -18,6 +19,9 @@ function App() {
   const [alert, setAlert] = useState({ show: false });
   const [edit, setEdit] = useState(false);
   const [id, setId] = useState(0);
+  useEffect(() => {
+    localStorage.setItem("budgetItems", JSON.stringify(expenses), [expenses]);
+  });
 
   const handleExpense = (e) => {
     setExpense(e.target.value);
@@ -72,7 +76,9 @@ function App() {
   const currency = "PKR";
   return (
     <>
-      <h1 className="text-center">React Budget Calculator</h1>
+      <h1 className="text-center">React Budget Calculator<br />
+        <span className="fs-6">(using Hooks, Props, localStorage, map(), filter(), reduce(), find())</span>
+      </h1>
       <div className="d-flex justify-content-center text-center">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
       </div>
