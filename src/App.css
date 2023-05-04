@@ -14,3 +14,7 @@ th:first-child {
 .cursor-pointer {
   cursor: pointer;
 }
+
+input[type=number] {
+  appearance: textfield
+}

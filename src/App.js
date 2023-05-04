@@ -76,7 +76,9 @@ function App() {
   const currency = "PKR";
   return (
     <>
-      <h1 className="text-center">React Budget Calculator</h1>
+      <h1 className="text-center">React Budget Calculator<br />
+        <span className="fs-6">(using Hooks, Props, localStorage, map(), filter(), reduce(), find())</span>
+      </h1>
       <div className="d-flex justify-content-center text-center">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
       </div>
