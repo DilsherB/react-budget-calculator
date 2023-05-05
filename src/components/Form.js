@@ -18,6 +18,12 @@ const Form = (props) => {
               id="expense"
               name="expense"
               pattern="^[a-zA-Z][a-zA-Z0-9.,$;]*$"
+              onInvalid={(e) => {
+                e.target.setCustomValidity(
+                  "Expense must start with alphabet only"
+                );
+              }}
+              onInput={(e) => e.target.setCustomValidity("")}
               value={expense}
               onChange={handleExpense}
             />
