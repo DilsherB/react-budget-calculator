@@ -1,9 +1,9 @@
-import './App.css';
-import { v4 } from 'uuid';
-import { useState, useEffect } from 'react';
-import Form from './components/Form';
-import Alert from './components/Alert';
-import List from './components/List';
+import "./App.css";
+import { v4 } from "uuid";
+import { useState, useEffect } from "react";
+import Form from "./components/Form";
+import Alert from "./components/Alert";
+import List from "./components/List";
 
 // const expenseList = [
 //   { id: v4(), name: 'Rento of the home', amount: 500 },
@@ -40,25 +40,34 @@ function App() {
     if (expense !== "" && amount > 0) {
       if (edit) {
         const tempItem = expenses.map((item) => {
-          return item.id === id ? { ...item, name: expense, amount: parseInt(amount, 10) } : item;
+          return item.id === id
+            ? { ...item, name: expense, amount: parseInt(amount, 10) }
+            : item;
         });
         setExpenses(tempItem);
         setEdit(false);
-        handleAlert({ type: 'success', text: 'Item successfully updated' });
+        handleAlert({ type: "success", text: "Item successfully updated" });
       } else {
-        const newExpense = { id: v4(), name: expense, amount: parseInt(amount, 10) };
+        const newExpense = {
+          id: v4(),
+          name: expense,
+          amount: parseInt(amount, 10),
+        };
         setExpenses([...expenses, newExpense]);
-        handleAlert({ type: 'success', text: 'Item successfully added' });
+        handleAlert({ type: "success", text: "Item successfully added" });
       }
       setExpense("");
       setAmount("");
     } else {
-      handleAlert({ type: 'danger', text: 'Please enter description and amount' });
+      handleAlert({
+        type: "danger",
+        text: "Please enter description and amount",
+      });
     }
   };
   const handleClearAll = () => {
     setExpenses([]);
-    handleAlert({ type: 'danger', text: 'All items successfully deleted' });
+    handleAlert({ type: "danger", text: "All items successfully deleted" });
   };
   const handleEdit = (id) => {
     const itemToUpdate = expenses.find((item) => item.id === id);
@@ -71,13 +80,17 @@ function App() {
   const handleDelete = (id) => {
     const filteredExpenses = expenses.filter((item) => item.id !== id);
     setExpenses(filteredExpenses);
-    handleAlert({ type: 'danger', text: 'Item successfully deleted' });
+    handleAlert({ type: "danger", text: "Item successfully deleted" });
   };
   const currency = "PKR";
   return (
     <>
-      <h1 className="text-center">React Budget Calculator<br />
-        <span className="fs-6">(using Hooks, Props, localStorage, map(), filter(), reduce(), find())</span>
+      <h1 className="text-center">
+        React Budget Calculator
+        <br />
+        <span className="fs-6">
+          (using Hooks, Props, localStorage, map(), filter(), reduce(), find())
+        </span>
       </h1>
       <div className="d-flex justify-content-center text-center">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
@@ -102,10 +115,9 @@ function App() {
       <h1 className="text-center">
         Total Spendings
         <span className="total">
-          {' '}
-          {currency}:
-          {' '}
-          { expenses.reduce((acc, cur) => {
+          {" "}
+          {currency}:{" "}
+          {expenses.reduce((acc, cur) => {
             let ret = acc;
             ret += parseInt(cur.amount, 10);
             return ret;

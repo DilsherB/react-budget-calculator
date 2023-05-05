@@ -1,29 +1,30 @@
-import React from 'react';
-import { MdSend } from 'react-icons/md';
+import React from "react";
+import { MdSend } from "react-icons/md";
 
 const Form = (props) => {
-  const {
-    expense, amount, handleExpense, handleAmount, handleSubmit, edit
-  } = props;
+  const { expense, amount, handleExpense, handleAmount, handleSubmit, edit } =
+    props;
 
   return (
     <form className="container" onSubmit={handleSubmit}>
       <div className="form-center form">
         <div className="form-group">
           <label htmlFor="expense" className="formElement">
-            Expense
+            Expense<span className="text-danger">*</span>
             <input
               type="text"
               placeholder="e.g. rent"
               className="form-control"
               id="expense"
               name="expense"
+              pattern="^[a-zA-Z][a-zA-Z0-9.,$;]*$"
               value={expense}
               onChange={handleExpense}
             />
+            <span>Expense can start only with letters</span>
           </label>
           <label htmlFor="amount formElement">
-            Amount
+            Amount<span className="text-danger">*</span>
             <input
               type="number"
               placeholder="e.g. 500"
@@ -33,6 +34,7 @@ const Form = (props) => {
               value={amount}
               onChange={handleAmount}
             />
+            <span>Enter amount for the expense here</span>
           </label>
         </div>
         <button type="submit" className="btn btn-success formElement">

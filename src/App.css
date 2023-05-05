@@ -15,6 +15,10 @@ th:first-child {
   cursor: pointer;
 }
 
-input[type=number] {
+input[type="number"] {
   appearance: textfield;
+}
+
+label {
+  margin: 0 20px;
 }
