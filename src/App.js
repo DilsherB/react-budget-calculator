@@ -19,6 +19,7 @@ function App() {
   const [alert, setAlert] = useState({ show: false });
   const [edit, setEdit] = useState(false);
   const [id, setId] = useState(0);
+  const [myCurrency, setMyCurrency] = useState("PKR");
   useEffect(() => {
     localStorage.setItem("budgetItems", JSON.stringify(expenses), [expenses]);
   });
@@ -82,16 +83,38 @@ function App() {
     setExpenses(filteredExpenses);
     handleAlert({ type: "danger", text: "Item successfully deleted" });
   };
-  const currency = "PKR";
+  const handleCurrency = (e) => {
+    setMyCurrency(e.target.value);
+  };
   return (
     <>
       <h1 className="text-center">
         React Budget Calculator
         <br />
         <span className="fs-6">
-          (using Hooks, Props, localStorage, map(), filter(), reduce(), find())
+          (using Hooks,
+          Props,
+          localStorage,
+          map(),
+          filter(),
+          reduce(),
+          find(),
+          customValidation: onInvalid, onInput,
+          ternary operator,
+          useState, useEffect, useRef, v4(),
+          Bootstrap 5,
+          React Icons(Material Icons),
+          )
         </span>
       </h1>
+      <div className="d-flex justify-content-center mt-3"> Select currency
+        <select className="w-25 ms-3" id="currency" onChange={handleCurrency}>
+          <option value="PKR">PKR</option>
+          <option value="$">USD</option>
+          <option value="€">EUR</option>
+          <option value="SR">SAR</option>
+        </select>
+      </div>
       <div className="d-flex justify-content-center text-center">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
       </div>
@@ -106,7 +129,7 @@ function App() {
         />
         <List
           list={expenses}
-          currency={currency}
+          currency={myCurrency}
           clearAll={handleClearAll}
           handleEdit={handleEdit}
           handleDelete={handleDelete}
@@ -116,7 +139,7 @@ function App() {
         Total Spendings
         <span className="total">
           {" "}
-          {currency}:{" "}
+          {myCurrency}:{" "}
           {expenses.reduce((acc, cur) => {
             let ret = acc;
             ret += parseInt(cur.amount, 10);
