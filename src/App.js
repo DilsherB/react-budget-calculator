@@ -91,23 +91,23 @@ function App() {
       <h1 className="text-center">
         React Budget Calculator
         <br />
-        <span className="fs-6">
-          (using Hooks,
-          Props,
-          localStorage,
-          map(),
-          filter(),
-          reduce(),
-          find(),
-          customValidation: onInvalid, onInput,
-          ternary operator,
-          useState, useEffect, useRef, v4(),
-          Bootstrap 5,
-          React Icons(Material Icons),
-          )
-        </span>
       </h1>
-      <div className="d-flex justify-content-center mt-3"> Select currency
+      <p className="text-center">
+        (using Hooks,
+        Props,
+        localStorage,
+        map(),
+        filter(),
+        reduce(),
+        find(),
+        (customValidation: onInvalid, onInput),
+        ternary operator,
+        useState, useEffect, useRef, v4(),
+        Bootstrap 5,
+        React Icons(Material Icons),
+        )
+      </p>
+      <div className="d-flex justify-content-center my-3"> Select currency
         <select className="w-25 ms-3" id="currency" onChange={handleCurrency}>
           <option value="PKR">PKR</option>
           <option value="$">USD</option>
