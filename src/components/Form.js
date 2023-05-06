@@ -37,6 +37,12 @@ const Form = (props) => {
               className="form-control"
               id="amount"
               name="amount"
+              onInvalid={(e) => {
+                e.target.setCustomValidity(
+                  "Please enter amount in digits only"
+                );
+              }}
+              onInput={(e) => e.target.setCustomValidity("")}
               value={amount}
               onChange={handleAmount}
             />
