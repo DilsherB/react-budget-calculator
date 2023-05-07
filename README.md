@@ -99,13 +99,15 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:</br>
-`A text editor like VS Code` </br>
-`and A web browser like chrome`
+1. `A text editor like VS Code` </br>
+2. `and A web browser like chrome`
 
 ### Setup
 
 Clone this repository to your desired folder: </br>
-to clone write this command in terminal `git clone https://github.com/DilsherB/react-budget-calculator.git` </br>
+to clone write following command in terminal </br>
+`git clone https://github.com/DilsherB/react-budget-calculator.git`
+</br>
 then `cd "foldername"`</br>
 
 ### Install
@@ -115,13 +117,14 @@ Install this project with:
 
 ### Usage
 
-To run the project, execute the following command:
-`npm start` and then </br>
+To run the project, execute the following command: </br>
+`npm start`
 
 ### Run tests
 
-To run tests, run the following command:
-`npm run test` but before that install jes with following command:</br>
+To run tests, run the following command:</br>
+`npm run test` </br>
+Before that install jes with following command:</br>
 `npm i jest`
 
 ### Deployment
