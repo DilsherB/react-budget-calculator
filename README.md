@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+
 # README
 
 <div align="center">
@@ -36,12 +37,16 @@
 **[Budget Calculator]** It is a CRUD application created in React.
 
 ## 🛠 Built With <a name="built-with"></a>
+
 <ol>
+  <li>
     <ol>React
         <li>React Hooks: useState(), useEffect(), useReff()</li>
         <li>React Functions: map(), filter(), reduce(), find()</li>
     </ol>
-
+  </li>
+  <li>bootstrap</li>
+  <li>React Material Icons</li>
 </ol>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -119,7 +124,6 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -129,7 +133,7 @@ You can deploy this project using:
 👤 **Author1**
 
 - GitHub: [@DilsherB](https://github.com/DilsherB)
-- Twitter: [@_brilliantMindz](https://twitter.com/_brilliantMindz)
+- Twitter: [@\_brilliantMindz](https://twitter.com/_brilliantMindz)
 - LinkedIn: [brilliantmindz](https://www.linkedin.com/in/brilliantmindz/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
