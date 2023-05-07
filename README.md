@@ -91,7 +91,8 @@ Budget Calculator is a web-app where you can Add, Update, Delete and Clear All t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🛠 <a name="Live-Demo">Live Demo</a>
+## 🛠 <a name="live-demo">Live Demo</a>
+
 > <a href="https://dilsher-react-budget-calculator.netlify.app/"> click to see live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
