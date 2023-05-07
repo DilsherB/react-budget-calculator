@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3><b>React Budget Calculator</b></h3>
-  <img src="./assets/landing.png" alt="screen shot" width="140"  height="auto" />
+  <img src="./src/assets/landing.png" alt="screen shot" width="140"  height="auto" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -178,10 +178,6 @@ I would like to thank Microverse.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
