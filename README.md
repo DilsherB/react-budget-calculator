@@ -4,8 +4,8 @@
 
 <div align="center">
   <h3><b>React Budget Calculator</b></h3>
-  <img src="./src/assets/landing.jpg" ></img>
 </div>
+  <img src="./src/assets/landing.jpg" ></img>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -53,7 +53,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Budget Calculator is a web-app where you can Add, Update, Delete and Clear All the items you added. It also gives you facility to change currency as per your need. It shows you the total automatically at the bottom. For storing the items program is using localstorage.
+Budget Calculator is a web-app where you can Add, Update, Delete and Clear All the items you added. It also gives you facility to change currency as per your need. It shows you the total automatically at the bottom. For storing the items program is using localstorage.
 
 <details>
   <summary>Client</summary>
