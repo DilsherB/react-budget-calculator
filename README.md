@@ -4,8 +4,8 @@
 
 <div align="center">
   <h3><b>React Budget Calculator</b></h3>
+  <img src="./src/assets/landing.jpg" alt="screen shot"/>
 </div>
-  <img src="./src/assets/landing.jpg" ></img>
 
 <!-- TABLE OF CONTENTS -->
 
