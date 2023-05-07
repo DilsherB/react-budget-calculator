@@ -47,11 +47,12 @@
   </li>
   <li>bootstrap</li>
   <li>React Material Icons</li>
+  <li>LocalStorage</li>
 </ol>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Math Magicians is a web-app where you can perform basic calculations and can read quote about maths.
+> Budget Calculator is a web-app where you can Add, Update, Delete and Clear All the items you added. It also gives you facility to change currency as per your need. It shows you the total automatically at the bottom. For storing the items program is using localstorage.
 
 <details>
   <summary>Client</summary>
@@ -80,9 +81,12 @@
 
 > You can.
 
-- **[perform basic calculations]**
-- **[you can read math related quotes]**
-- **[It fetches data from API]**
+- **[perform add your budget items]**
+- **[you can update your budget items]**
+- **[you can delete your budget items]**
+- **[you can delete all your budget items at once]**
+- **[you can change the currency as well]**
+- **[It with add all your items amount and show you total at the bottom]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,6 +105,7 @@ In order to run this project you need:</br>
 ### Setup
 
 Clone this repository to your desired folder: </br>
+to clone write this command in terminal `git clone https://github.com/DilsherB/react-budget-calculator.git` </br>
 then `cd "foldername"`</br>
 
 ### Install
@@ -111,8 +116,7 @@ Install this project with:
 ### Usage
 
 To run the project, execute the following command:
-`npm run build` and then </br>
-`npm start`
+`npm start` and then </br>
 
 ### Run tests
 
@@ -122,7 +126,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using the github.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,9 +146,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[perform basic calculations]**
-- [ ] **[you can read math related quotes]**
-- [ ] **[It fetches data from API]**
+- [ ] **[database to store items]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
