@@ -4,7 +4,7 @@
 <div align="center">
   <h3><b>React Budget Calculator</b></h3>
   <!-- <img src="./media/dilsher-logo.png" alt="logo" width="140"  height="auto" /> -->
-<img src="![Snapshot](../src/Assets/landing.PNG)" />
+<img src="![Snapshot](./src/Assets/landing.PNG)" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
