@@ -51,7 +51,7 @@
   <li>LocalStorage</li>
 </ol>
 
-### Tech Stack <a name="tech-stack"></a>
+### <a name="tech-stack"> Tech Stack </a>
 
 Budget Calculator is a web-app where you can Add, Update, Delete and Clear All the items you added. It also gives you facility to change currency as per your need. It shows you the total automatically at the bottom. For storing the items program is using localstorage.
 
@@ -78,7 +78,7 @@ Budget Calculator is a web-app where you can Add, Update, Delete and Clear All t
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+### <a name="key-features"> Key Features </a>
 
 > You can.
 
@@ -93,39 +93,39 @@ Budget Calculator is a web-app where you can Add, Update, Delete and Clear All t
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 <a name="getting-started"> Getting Started </a>
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need:</br>
-`A text editor like VS Code` </br>
-`and A web browser like chrome`
-
-### Setup
+### <a name="Setup"> Setup </a>
 
 Clone this repository to your desired folder: </br>
 to clone write this command in terminal `git clone https://github.com/DilsherB/react-budget-calculator.git` </br>
 then `cd "foldername"`</br>
 
-### Install
+### <a name="Prerequisites"> Prerequisites </a>
+
+In order to run this project you need:</br>
+`A text editor like VS Code` </br>
+`and A web browser like chrome`
+
+### <a name="Install"> Install </a>
 
 Install this project with:
 `npm i`
 
-### Usage
+### <a name="Usage"> Usage </a>
 
 To run the project, execute the following command:
 `npm start` and then </br>
 
-### Run tests
+### <a name="Run tests"> Run tests </a>
 
 To run tests, run the following command:
 `npm run test` but before that install jes with following command:</br>
 `npm i jest`
 
-### Deployment
+### <a name="Deployment"> Deployment </a>
 
 You can deploy this project using the github.
 
@@ -133,7 +133,7 @@ You can deploy this project using the github.
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 <a name="Authors">Authors</a>
 
 👤 **Dilsher Balouch**
 
@@ -145,7 +145,7 @@ You can deploy this project using the github.
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+## 🔭 <a name="Future Features">Future Features</a>
 
 - [ ] **[database to store items]**
 
@@ -153,7 +153,7 @@ You can deploy this project using the github.
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 <a name="Contributing">Contributing</a>
 
 Contributions, issues, and feature requests are welcome!
 
@@ -163,7 +163,7 @@ Feel free to check the [issues page](https://github.com/DilsherB/react-budget-ca
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## ⭐️ <a name="support">Show your support</a>
 
 If you like this project please give it a star to encourage me.
 
@@ -171,7 +171,7 @@ If you like this project please give it a star to encourage me.
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 <a name="Acknowledgments">Acknowledgments</a>
 
 I would like to thank Microverse.
 
@@ -179,7 +179,7 @@ I would like to thank Microverse.
 
 <!-- FAQ (optional) -->
 
-## 📝 License <a name="license"></a>
+## 📝 <a name="License">License</a>
 
 This project is [MIT](./LICENSE) licensed.
 
