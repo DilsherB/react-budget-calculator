@@ -3,8 +3,6 @@
 
 <div align="center">
   <h3><b>React Budget Calculator</b></h3>
-  <img src="![Alt text](./landing.jpg)" alt="logo" width="140"  height="auto" />
-<!-- <img src="![Snapshot](./src/assets/landing.PNG)" /> -->
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -35,9 +33,16 @@
 
 # 📖 [Math Magicians] <a name="about-project"></a>
 
-**[Math Magicians]** is a web-app where you can perform basic calculations and can read quote about maths.
+**[Budget Calculator]** It is a CRUD application created in React.
 
 ## 🛠 Built With <a name="built-with"></a>
+<ol>
+    <ol>React
+        <li>React Hooks: useState(), useEffect(), useReff()</li>
+        <li>React Functions: map(), filter(), reduce(), find()</li>
+    </ol>
+
+</ol>
 
 ### Tech Stack <a name="tech-stack"></a>
 
