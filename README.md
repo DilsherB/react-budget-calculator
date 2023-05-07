@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3><b>React Budget Calculator</b></h3>
-  <img src="![Alt text](landing.jpg)" alt="logo" width="140"  height="auto" />
+  <img src="![Alt text](./landing.jpg)" alt="logo" width="140"  height="auto" />
 <!-- <img src="![Snapshot](./src/assets/landing.PNG)" /> -->
 </div>
 
