@@ -1,6 +1,6 @@
 import "./App.css";
 import { v4 } from "uuid";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Form from "./components/Form";
 import Alert from "./components/Alert";
 import List from "./components/List";
@@ -20,6 +20,10 @@ function App() {
   const [edit, setEdit] = useState(false);
   const [id, setId] = useState(0);
   const [myCurrency, setMyCurrency] = useState("PKR");
+  const expenseRef = useRef();
+  useEffect(() => {
+    expenseRef.current.focus();
+  }, [expense]);
   useEffect(() => {
     localStorage.setItem("budgetItems", JSON.stringify(expenses), [expenses]);
   });
@@ -93,21 +97,13 @@ function App() {
         <br />
       </h1>
       <p className="text-center">
-        (using Hooks,
-        Props,
-        localStorage,
-        map(),
-        filter(),
-        reduce(),
-        find(),
-        (customValidation: onInvalid, onInput),
-        ternary operator,
-        useState, useEffect, useRef, v4(),
-        Bootstrap 5,
-        React Icons(Material Icons),
-        )
+        (using Hooks, Props, localStorage, map(), filter(), reduce(), find(),
+        (customValidation: onInvalid, onInput), ternary operator, useState,
+        useEffect, useRef, v4(), Bootstrap 5, React Icons(Material Icons), )
       </p>
-      <div className="d-flex justify-content-center my-3"> Select currency
+      <div className="d-flex justify-content-center my-3">
+        {" "}
+        Select currency
         <select className="w-25 ms-3" id="currency" onChange={handleCurrency}>
           <option value="PKR">PKR</option>
           <option value="$">USD</option>
@@ -126,6 +122,7 @@ function App() {
           handleAmount={handleAmount}
           handleSubmit={handleSubmit}
           edit={edit}
+          expenseRef={expenseRef}
         />
         <List
           list={expenses}

@@ -1,9 +1,15 @@
-import React from "react";
 import { MdSend } from "react-icons/md";
 
 const Form = (props) => {
-  const { expense, amount, handleExpense, handleAmount, handleSubmit, edit } =
-    props;
+  const {
+    expense,
+    amount,
+    handleExpense,
+    handleAmount,
+    handleSubmit,
+    edit,
+    expenseRef,
+  } = props;
 
   return (
     <form className="container" onSubmit={handleSubmit}>
@@ -23,6 +29,7 @@ const Form = (props) => {
                   "Expense must start with alphabet only"
                 );
               }}
+              ref={expenseRef}
               onInput={(e) => e.target.setCustomValidity("")}
               value={expense}
               onChange={handleExpense}
