@@ -112,8 +112,8 @@ then `cd "foldername"`</br>
 ### <a name="Prerequisites"> Prerequisites </a>
 
 In order to run this project you need:</br>
-`A text editor like VS Code` </br>
-`and A web browser like chrome`
+> 1. `A text editor like VS Code` </br>
+> 2. `and A web browser like chrome`
 
 ### <a name="Install"> Install </a>
 
@@ -122,7 +122,7 @@ Install this project with:
 
 ### <a name="Usage"> Usage </a>
 
-To run the project, execute the following command:
+To run the project, execute the following command: </br>
 `npm start` and then </br>
 
 ### <a name="Run tests"> Run tests </a>
